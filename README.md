@@ -8,6 +8,8 @@ It shows statuses of up to 3 hosts (🟢 up or 🔴 down).
 Clicking on it sends a notification with more detailed data per host and their LXC containers.
 <img width="469" height="158" alt="image" src="https://github.com/user-attachments/assets/a6cb660f-add2-4d4f-87e6-b30c9757a29d" />
 
+> Note that IP addresses of hosts are taken from eth0 interfaces by default. You can change the interface name [here](./proxmox_status.py#L74)
+
 ## Installation
 1. Create a proxmox API token that has access to hosts, lxc and nw interfaces.
 2. Clone this repo 
