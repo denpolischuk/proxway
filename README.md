@@ -8,7 +8,6 @@ It shows statuses of up to 3 hosts (🟢 up or 🔴 down).
 Clicking on it sends a notification with more detailed data per host and their LXC containers.
 <img width="469" height="158" alt="image" src="https://github.com/user-attachments/assets/a6cb660f-add2-4d4f-87e6-b30c9757a29d" />
 
-
 ## Installation
 1. Create a proxmox API token that has access to hosts, lxc and nw interfaces.
 2. Clone this repo 
@@ -20,4 +19,9 @@ git clone git@github.com:denpolischuk/proxway.git "$XDG_CONFIG_HOME/waybar/proxw
 cd "$XDG_CONFIG_HOME/waybar/proxway"
 ./install.sh
 ```
+
+## Required dependencies
+1. Python3 and pip3
+2. libnotify
+3. Notification client, such as `swaync` or  `dunst`
 
