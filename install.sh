@@ -8,6 +8,19 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 # --- Checking if python and pip are installed on the host
 source "$SCRIPT_DIR/check.sh"
 
+# --- Check for libnotify-bin ---
+if ! command -v notify-send &> /dev/null; then
+    echo "Error: libnotify-bin (notify-send) is not installed."
+    echo "Please install libnotify-bin to enable desktop notifications."
+    echo "On Debian/Ubuntu, you can install it with:"
+    echo "  sudo apt-get install libnotify-bin"
+    echo "On Fedora, you can install it with:"
+    echo "  sudo dnf install libnotify"
+    echo "On Arch Linux, you can install it with:"
+    echo "  sudo pacman -S libnotify"
+    exit 1
+fi
+
 # --- Install Python dependencies ---
 REQ_FILE="$INSTALL_DIR/requirements.txt"
 echo "Installing Python dependencies..."
