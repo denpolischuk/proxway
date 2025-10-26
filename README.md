@@ -2,7 +2,12 @@
 
 ## Description
 This is a simple tool to track proxmox hosts and their lxc containers from Waybar.
-It shows statuses of up to 3 hosts (🟢 up or 🔴 down) and on click it sends a notification with more detailed data per host and their LXC containers.
+It shows statuses of up to 3 hosts (🟢 up or 🔴 down).
+<img width="128" height="32" alt="image" src="https://github.com/user-attachments/assets/380705c0-2862-41eb-bbac-e733935fa293" />
+
+Clicking on it sends a notification with more detailed data per host and their LXC containers.
+<img width="469" height="158" alt="image" src="https://github.com/user-attachments/assets/a6cb660f-add2-4d4f-87e6-b30c9757a29d" />
+
 
 ## Installation
 1. Create a proxmox API token that has access to hosts, lxc and nw interfaces.
