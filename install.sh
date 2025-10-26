@@ -73,6 +73,6 @@ cat <<'EOF'
         "interval": 60,
         "return-type": "json",
         "on-click": "<Path to the script>/proxway/run.sh --details",
-        "tooltip": false
+        "tooltip": true
     }
 EOF
