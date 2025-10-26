@@ -22,7 +22,7 @@ if ! command -v notify-send &> /dev/null; then
 fi
 
 # --- Install Python dependencies ---
-REQ_FILE="$INSTALL_DIR/requirements.txt"
+REQ_FILE="$SCRIPT_DIR/requirements.txt"
 echo "Installing Python dependencies..."
 echo "Next step will install Python packages from requirements.txt:"
 echo "-------------------------------------------------------------"
