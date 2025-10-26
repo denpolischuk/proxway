@@ -1,4 +1,4 @@
-# Proxway - simple proxmox status tracker for Waybar
+# Proxway - simple proxmox hosts status tracker for Waybar
 
 ## Description
 This is a simple tool to track proxmox hosts and their lxc containers from Waybar.
